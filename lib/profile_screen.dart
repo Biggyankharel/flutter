@@ -11,17 +11,32 @@ class _ProfileScreenState extends State<ProfileScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.white,
       appBar: AppBar(
         centerTitle: true,
-        title: Text("Softwarica", style: TextStyle(
-          fontSize: 24,
-          fontWeight: FontWeight.w700,
-          color: Colors.red,
-          decoration: TextDecoration.underline,
-          fontStyle: FontStyle.italic
-        )),
+        title: Text(
+          "Softwarica",
+          style: TextStyle(
+            fontSize: 24,
+            fontWeight: FontWeight.w700,
+            color: Colors.red,
+            decoration: TextDecoration.underline,
+            fontStyle: FontStyle.italic,
+          ),
+        ),
         leading: Icon(Icons.arrow_back_ios),
         actions: [Icon(Icons.more_horiz, color: Colors.red, size: 25)],
+      ),
+      body: Column(
+        children: [
+          Row(
+            crossAxisAlignment: CrossAxisAlignment.center,
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            children: [
+
+            ],
+          ),
+        ],
       ),
       // bottomNavigationBar: ,
       // floatingActionButton: ,
