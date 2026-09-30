@@ -31,11 +31,37 @@ class _ProfileScreenState extends State<ProfileScreen> {
         children: [
           Row(
             crossAxisAlignment: CrossAxisAlignment.center,
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            mainAxisAlignment: MainAxisAlignment.spaceAround,
             children: [
-
+              ClipRRect(
+                borderRadius: BorderRadius.circular(100),
+                child: Image.asset("assets/images/apple.png",
+                    fit: BoxFit.cover,
+                    height: 100,
+                    width: 100,
+                ),
+              ),
+             Column(
+               children: [
+                 Text("174"),
+                 Text("Posts")
+               ],
+             ),
+              Column(
+                children: [
+                  Text("1M"),
+                  Text("Followers")
+                ],
+              ),
+              Column(
+                children: [
+                  Text("500k"),
+                  Text("Followings")
+                ],
+              ),
             ],
           ),
+
         ],
       ),
       // bottomNavigationBar: ,
